@@ -1,0 +1,139 @@
+.company-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e5e7eb;
+}
+
+.company-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.company-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.company-name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  flex: 1;
+}
+
+.company-industry {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.company-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.info-item:not(.info-item-location) {
+  justify-content: space-between;
+}
+
+.info-item-location {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #4b5563;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.info-value {
+  color: #111827;
+  font-weight: 600;
+}
+
+.info-item:not(.info-item-location) .info-value {
+  text-align: right;
+}
+
+/* Special styling for location to make it more visible */
+.info-item-location .info-label {
+  color: #667eea;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.info-item-location .info-value {
+  color: #1e40af;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.company-description {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.company-website {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  transition: color 0.2s;
+}
+
+.company-website:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .company-card {
+    padding: 16px;
+  }
+
+  .company-card-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .company-name {
+    font-size: 1.25rem;
+  }
+}
+

@@ -1,0 +1,103 @@
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.company-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.company-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.company-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.company-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.company-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.company-table td {
+  padding: 16px;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.company-name-cell {
+  font-weight: 600;
+  color: #111827;
+}
+
+.industry-badge {
+  background: #ede9fe;
+  color: #7c3aed;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.location-cell {
+  color: #1e40af !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+.website-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.website-link:hover {
+  background-color: #667eea;
+  color: white;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    border-radius: 8px;
+  }
+
+  .company-table th,
+  .company-table td {
+    padding: 12px 8px;
+    font-size: 0.85rem;
+  }
+}
+
