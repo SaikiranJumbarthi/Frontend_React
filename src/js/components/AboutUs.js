@@ -205,7 +205,7 @@ const AboutUs = ({ onClose }) => {
             leading innovation in software, hardware, cloud services, and digital transformation.
           </p>
           <p>
-            These companies are at the forefront of developing solutions that power modern businesses, 
+            These companies are at the forefront of developing solutions that power modern businesses, Technologies
             from cloud infrastructure and artificial intelligence to cybersecurity and mobile applications. 
             They drive digital transformation across industries and shape the future of technology.
           </p>
